@@ -1,0 +1,164 @@
+.page {
+    display: grid;
+    grid-template-columns: 252px 1188px;
+    grid-template-rows: 143px 783px 64px;
+    grid-template-areas: 
+    "naw header"
+    "naw main"
+    "naw main";
+
+    border: 1px green solid;
+}
+
+.naw {
+    grid-area: naw;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 259px);
+    grid-template-rows: repeat(4, 180px);
+    grid-template-areas:
+        "C_11 C_11 C_21 C_22"
+        "C_12 C_12 C_21 C_22"
+        "C_31 C_32 C_41 C_41"
+        "C_31 C_32 C_42 C_42";
+    justify-content: center;
+    align-content: start;
+    grid-gap: 21px;
+}
+
+#C_11 {
+    grid-area: C_11;
+}
+
+#C_12 {
+    grid-area: C_12;
+}
+
+#C_21 {
+    grid-area: C_21;
+}
+
+#C_22 {
+    grid-area: C_22;
+}
+
+#C_31 {
+    grid-area: C_31;
+}
+
+#C_32 {
+    grid-area: C_32;
+}
+
+#C_41 {
+    grid-area: C_41;
+}
+
+#C_42 {
+    grid-area: C_42;
+}
+
+
+/*фон, цвета*/
+body {
+    background-color: white;
+}
+
+.main aside {
+    border-radius: 15px;
+}
+
+#C_11 {
+    background: #BCE7F0;
+    background-image: url(assets/background/C_11_mask.png);
+
+}
+
+#C_12 {
+    background: #DEC8F3;
+    background-image: url(assets/background/C_12_mask.png);
+}
+
+#C_21 {
+    background: url(assets/background/C_21_mask.png);
+}
+
+#C_22 {
+    background-image: url(assets/background/C_22_mask.png);
+}
+
+#C_31 {
+    background-image: url(assets/background/C_31_mask.png);
+}
+
+#C_32 {
+    background-image: url(assets/background/C_32_mask.png);
+}
+
+#C_41 {
+    background-image: url(assets/background/C_41_mask.png);
+}
+
+#C_42 {
+    background-image: url(assets/background/C_42_mask.png);
+}
+
+/*Динамические эффекты*/
+.main aside:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+}
+
+/*текст*/
+#C_11 p {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 47px;
+    color: #000000;
+    text-align: center;
+    margin-top: 72px;
+}
+
+h1 {
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+#C_41 h1 {
+    margin-top: 62px;
+    color: #001AA2;
+}
+
+#C_42 h1 {
+    margin-top: 61px;
+    color: #FD2E24;
+}
+
+h2 {
+    margin-left: 30px;
+    margin-top: 3px;
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #000000;
+}

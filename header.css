@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header_form {
+    display: grid;
+    grid-template-columns: 539px 434px calc(47px + 24px + 25px + 24px);
+    grid-template-rows: 31px;
+    grid-template-areas:
+        "header_search header_menu header_basket";
+    margin-left: 37px;
+}
+
+/*форма поиска*/
+.header_form {
+    grid-area: header_form;
+}
+
+form {
+    position: relative;
+}
+
+button {
+    position: absolute;
+    background: transparent;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:before {
+    content: url(assets/header/search.png);
+    background: white;
+}
+
+input {
+    height: 22px;
+    margin-left: calc(24px + 17px);
+    border: none;
+    outline: none;
+}
+
+
+/*навигация header*/
+.header_menu {
+    grid-area: header_menu;
+    width: 434px;
+    height: 31px;
+}
+
+.header_basket {
+    grid-area: header_basket;
+}
+
+.header_naw {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header_naw a {
+    display: block;
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header_naw a:hover {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 7px;
+}
+
+
+/*корзина, аккаунт*/
+.header_basket {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_basket a {
+    margin-left: 25px;
+}
